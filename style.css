@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Roboto:wght@900&display=swap');
+
+* {
+    font-family: 'Playfair Display';
+    background-color: #fffeff;
+    text-align: center;
+}
+
+body {
+    border: 5px solid;
+    border-image: linear-gradient(rgb(253, 0, 219), rgb(125, 71, 252), rgb(87, 186, 248), rgb(2, 248, 207)) 1;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+img {
+    margin-top: 5%;
+    border: 3px black solid;
+    border-radius: 50%;
+    width: 200px;
+}
+
+h1,
+h2 {
+    font-size: 4rem;
+    font-family: 'Roboto';
+    -webkit-text-stroke: 3px black;
+    color: #8883c7;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    letter-spacing: .1ch;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+article {
+    margin: 5%;
+}
+
+span {
+    background-color: #f2a3f6;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1cm;
+
+}
+
+
+button {
+    font-size: 2rem;
+    background: linear-gradient(45deg, rgba(253, 233, 255, 1) 0%, rgba(244, 197, 255, 1) 15%, rgba(205, 201, 255, 1) 40%, rgba(199, 226, 255, 1) 70%, rgba(194, 255, 251, 1) 100%);
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+}
+
+button:hover {
+    background: linear-gradient(225deg, rgba(253, 233, 255, 1) 0%, rgba(244, 197, 255, 1) 15%, rgba(205, 201, 255, 1) 40%, rgba(199, 226, 255, 1) 70%, rgba(194, 255, 251, 1) 100%);
+    box-shadow:
+        0 0 20px 10px #fff,
+        0 0 30px 15px #f0f,
+        0 0 40px 20px #0ff;
+    transform: translateY(-20%);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#portfolio {
+    opacity: 50%;
+}
+
+#portfolio:hover {
+    transform: none;
+    box-shadow: none;
+    cursor: default;
+}
+
+#embed-timeline {
+    font-size: 2rem;
+    border: 3px black solid;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 10px;
+    background: linear-gradient(45deg, rgba(253, 233, 255, 0.3) 0%, rgba(244, 197, 255, 0.3) 15%, rgba(205, 201, 255, 0.3) 40%, rgba(199, 226, 255, 0.3) 70%, rgba(194, 255, 251, 0.3) 100%);
+    width: 48%;
+    margin: 10px;
+
+}
+
+.twitter-timeline {
+    background-color: rgb(255, 255, 255, 0);
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    body {
+        border-width: 3px;
+    }
+
+    img {
+        width: 35%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 20px 0px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        -webkit-text-stroke: 2px black
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 0.75cm;
+    }
+
+    button {
+        font-size: 1.25rem;
+    }
+
+    #embed-timeline {
+        width: 75%;
+    }
+}
